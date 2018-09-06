@@ -1,21 +1,19 @@
-# Weby
+# Minimal working example for bug report
 
-**TODO: Add description**
+1. Create new project on Elixir `1.7.3`
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `weby` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:weby, "~> 0.1.0"}
-  ]
-end
+```bash
+mix new weby
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/weby](https://hexdocs.pm/weby).
+2. Add local module `Utils` with function `Utils#counter`
 
+3. Import it in other module and try to use it method.
+
+4. It is not suggesting imported functions
+
+5. It does know about import though, because on CMD+click, it suggest correct function
+
+6. Auto-complete works correctly when you type full funtion name with module e.g. `Utils.`, it correctly suggests `counter` function
+
+7. It is all the same with added dependencies, e.g. `plug`
